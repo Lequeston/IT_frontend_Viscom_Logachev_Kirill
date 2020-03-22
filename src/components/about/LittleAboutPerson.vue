@@ -37,7 +37,7 @@
     #little-about-person {
         display: flex;
         flex-direction: column;
-        padding: 5% 0 5% 3%;
+        padding: 3% 5% 3% 5%;
         border-bottom: 1px solid #DEDFE2;
     }
 

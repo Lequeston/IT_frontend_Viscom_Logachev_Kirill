@@ -23,6 +23,9 @@ export default {
         },
         previous(){
             return '/about/' + ParseJSON.getPreviousId(this.$route.params.id);
+        },
+        isWidth(){
+            return (window.innerWidth > 700);
         }
     },
     methods: {

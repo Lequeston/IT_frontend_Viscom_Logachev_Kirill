@@ -1,8 +1,9 @@
 <div id="about-page">
     <span>
-        <h2>{{ aboutName }}</h2>
-        <hr>
-        <router-link class="button-global" to="/" exact> {{ buttonHome }}</router-link>
+        <h2 v-if="isWidth">{{ aboutName }}</h2>
+        <h2 v-else class="name-center">{{aboutName}}</h2>
+        <hr v-if="isWidth">
+        <router-link v-if="isWidth" class="button-global" to="/" exact> {{ buttonHome }}</router-link>
     </span>
     <div id="about">
         <LeftInformationMenu
@@ -13,7 +14,8 @@
         />
     </div>
     <div id="button-menu">
-        <router-link class="button-leafing-through" style="margin-right: 40px;" :to="previous" exact> {{ buttonPrevious}}</router-link>
+        <router-link class="button-leafing-through" style="margin-right: 2%;" :to="previous" exact> {{ buttonPrevious}}</router-link>
+        <router-link v-if="!isWidth" class="button-leafing-through" style="margin-right: 2%" to="/" exact> {{ buttonHome }}</router-link>
         <router-link class="button-leafing-through" :to="next" exact> {{ buttonNext }}</router-link>
     </div>
 </div>

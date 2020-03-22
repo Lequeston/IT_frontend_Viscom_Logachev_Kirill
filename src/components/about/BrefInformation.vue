@@ -31,7 +31,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        padding: 30px 0 30px 0;
+        padding: 5% 5% 5% 5%;
         border-bottom: 1px solid #DEDFE2;
     }
 
@@ -42,7 +42,7 @@
     }
 
     h5{
-        margin: 0 0 20px 20px;
+        margin-bottom: 5%;
         font-family: Helvetica;
         font-size: 14px;
         color: rgba(0,0,0,0.50);
@@ -61,15 +61,15 @@
     .text-info{
         white-space: pre-wrap;
         width: 50%;
-        margin: 0 20px 0 20px;
         font-family: Helvetica;
         font-size: 14px;
         color: #000000;
         letter-spacing: 0;
+        line-break: normal;
     }
 
     @media (max-width: 500px) {
-        #text-info{
+        .text-info{
             width: 100%;
         }
     }

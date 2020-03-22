@@ -64,10 +64,14 @@
 
 <style scoped>
     #right-menu {
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         border-left: 1px solid #DEDFE2;
+    }
+    
+    @media (max-width: 700px) {
+
     }
 </style>

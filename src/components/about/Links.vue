@@ -22,7 +22,7 @@
     #links {
         display: flex;
         flex-direction: column;
-        padding: 30px 20px 20px 20px;
+        padding: 3% 5% 1% 5%;
     }
 
     a {

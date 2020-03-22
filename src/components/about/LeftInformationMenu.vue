@@ -51,8 +51,9 @@
         height: 120px;
         border-radius: 50%;
         background: #D8D8D8;
-        margin-bottom: 20px;
+        margin-bottom: 5%;
         text-align: center;
+        object-fit: cover;
     }
 
     h4{
@@ -64,13 +65,5 @@
     }
 
     @media (max-width: 700px) {
-        img {
-            width: 90%;
-        }
-
-        #left-menu{
-            min-width: 100px;
-        }
-
     }
 </style>
