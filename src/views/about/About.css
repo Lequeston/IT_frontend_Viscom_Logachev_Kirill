@@ -11,7 +11,7 @@
 
 #about-page {
     width: 100%;
-    padding: 98px 165px 0 165px;
+    padding: 7% 10% 0 10%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -26,10 +26,11 @@ hr {
 span {
     display: inline-flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 1%;
 }
 
 h2{
+    display: inline-flex;
     float: left;
     font-family: Helvetica;
     font-size: 25px;
@@ -65,7 +66,7 @@ h2{
 #button-menu {
     display: inline-flex;
     justify-content: space-between;
-    margin: 20px auto 0 auto;
+    margin: 1% auto 0 auto;
 }
 
 .button-leafing-through{
@@ -78,4 +79,10 @@ h2{
 
 .button-leafing-through:hover {
     color: #5169DC;
+}
+
+@media (max-width: 700px) {
+    #about-page{
+        padding: 3% 1% 0 1%;
+    }
 }

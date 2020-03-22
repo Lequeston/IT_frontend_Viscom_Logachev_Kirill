@@ -48,6 +48,13 @@
         color: rgba(0,0,0,0.50);
         letter-spacing: 0.4px;
     }
+
+    @media (max-width: 500px) {
+        #text{
+            display: flex;
+            flex-direction: column;
+        }
+    }
 </style>
 
 <style>
@@ -59,5 +66,11 @@
         font-size: 14px;
         color: #000000;
         letter-spacing: 0;
+    }
+
+    @media (max-width: 500px) {
+        #text-info{
+            width: 100%;
+        }
     }
 </style>

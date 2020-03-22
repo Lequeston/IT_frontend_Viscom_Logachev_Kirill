@@ -2,12 +2,18 @@
     <div id="little-about-person">
         <h5>{{ title }}</h5>
         <div id="info">
-            <span class="title">{{titleDate}}</span>
-            <span class="text">{{date}}</span>
-            <span class="title">{{titlePhoneNumber}}</span>
-            <span class="text">{{phoneNumber}}</span>
-            <span class="title">{{titleEMAIL}}</span>
-            <span class="text">{{email}}</span>
+            <div class="inf">
+                <span class="title">{{titleDate}}</span>
+                <span class="text">{{date}}</span>
+            </div>
+            <div class="inf">
+                <span class="title">{{titlePhoneNumber}}</span>
+                <span class="text">{{phoneNumber}}</span>
+            </div>
+            <div class="inf">
+                <span class="title">{{titleEMAIL}}</span>
+                <span class="text">{{email}}</span>
+            </div>
         </div>
     </div>
 </template>
@@ -31,7 +37,7 @@
     #little-about-person {
         display: flex;
         flex-direction: column;
-        padding: 30px 0 30px 20px;
+        padding: 5% 0 5% 3%;
         border-bottom: 1px solid #DEDFE2;
     }
 
@@ -44,12 +50,11 @@
     }
 
     #info {
-        display: inline-flex;
-        flex-wrap: nowrap;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .text{
-        margin-right: 50px;
         font-family: Helvetica;
         font-size: 14px;
         color: #000000;
@@ -57,10 +62,19 @@
     }
 
     .title{
-        margin-right: 10px;
         font-family: Helvetica;
         font-size: 14px;
+        margin-right: 10px;
         color: rgba(0,0,0,0.50);
         letter-spacing: 0.4px;
+    }
+
+    .inf{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-right: 7%;
+    }
+    @media (max-width: 700px) {
+
     }
 </style>

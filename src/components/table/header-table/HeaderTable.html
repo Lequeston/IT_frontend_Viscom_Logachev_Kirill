@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <tr>
     <HeaderTableCell 
-        v-for='name in columnNames'
+        v-for='(name, prop) in columnNames'
         :name='name'
     />
 </tr>

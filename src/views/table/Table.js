@@ -7,7 +7,7 @@ export default{
     data(){
         return{
             tableName: 'Участники',
-            columnNames: ['Фамилия', 'Имя', 'EMAIL'],
+            columnNames: ['ФАМИЛИЯ', 'ИМЯ', 'EMAIL'],
         };
     },
 

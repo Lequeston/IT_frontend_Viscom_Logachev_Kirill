@@ -3,6 +3,13 @@ td {
     font-size: 14px;
     color: #000000;
     letter-spacing: 0;
-    width: 25%;
-    padding-left: 20px;
+    flex: 1;
+    align-items: center;
+    align-self: center;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 700px){
 }

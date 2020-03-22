@@ -43,6 +43,7 @@
         flex-direction: column;
         align-items: center;
         align-self: center;
+        min-width: 140px;
     }
 
     img {
@@ -60,5 +61,16 @@
         color: #000000;
         letter-spacing: 0.4px;
         text-align: center;
+    }
+
+    @media (max-width: 700px) {
+        img {
+            width: 90%;
+        }
+
+        #left-menu{
+            min-width: 100px;
+        }
+
     }
 </style>

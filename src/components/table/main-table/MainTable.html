@@ -3,7 +3,8 @@
     <MainTableCell 
         v-for="(value, property) in lineNames"
         :key="property"
+        :prop="property"
         :name="value"
     />
-    <th><router-link :to="path">{{ buttonName }}</router-link></th>
+    <td class="button"><router-link :to="path">{{ buttonName }}</router-link></td>
 </tr>

@@ -2,10 +2,13 @@ export default{
     name: 'HeaderTableCell',
     props: ['name'],
     computed: {
-    },
-    methods: {
-        colspan(name){
-            return (name === 'EMAIL') ? 2 : 1;
+        isEmail(){
+            const width = window.innerWidth;
+            return (this.name === 'EMAIL' && width > 700);
+        },
+        isWidth(){
+            const width = window.innerWidth;
+            return ((width > 700) || (this.name != 'EMAIL'));
         }
-    }
+    },
 }

@@ -1,4 +1,9 @@
 tr {
     border-bottom: 1px solid #DEDFE2;
     height: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 700px){
 }
