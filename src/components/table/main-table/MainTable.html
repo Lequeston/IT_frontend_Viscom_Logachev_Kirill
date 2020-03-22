@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<tr>
-    <MainTableCell 
-        v-for="(value, property) in lineNames"
-        :key="property"
-        :prop="property"
-        :name="value"
+<tr v-if="isWidth">
+    <MainTableCell
+            v-for="(value, property) in lineNames"
+            :key="property"
+            :prop="property"
+            :name="value"
     />
     <td class="button"><router-link :to="path">{{ buttonName }}</router-link></td>
 </tr>
+
+<router-link :to="path" v-else class="butt">
+<tr>
+    <MainTableCell
+            v-for="(value, property) in lines"
+            :key="property"
+            :prop="property"
+            :name="value"
+    />
+</tr>
+</router-link>

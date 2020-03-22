@@ -1,4 +1,4 @@
-#table-page {
+.table-page {
     width: 100%;
     padding: 7% 10% 0 10%;
     display: flex;
@@ -31,7 +31,7 @@ hr{
     width: 80%;
 }
 
-#title {
+.title {
     display: flex;
     flex-direction: row;
     margin-bottom: 2%;
@@ -39,7 +39,7 @@ hr{
 }
 
 @media (max-width: 700px){
-    #table-page{
+    .table-page{
         padding: 3% 1% 0 1%;
     }
 }

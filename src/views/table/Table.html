@@ -1,5 +1,5 @@
-<div id="table-page">
-    <div id="title">
+<div v-if="isWidth" class="table-page">
+    <div class="title">
         <h2>{{ tableName }}</h2>
         <hr>
     </div>
@@ -12,6 +12,22 @@
             :key="lineNames.id"
             :id="lineNames.id"
             :lineNames="cellName(lineNames)"
+        />
+    </table>
+</div>
+<div v-else class="table-page">
+    <div class="title" style="justify-content: center">
+        <h2>{{tableName}}</h2>
+    </div>
+    <table>
+        <HeaderTable
+            :columnNames="tellColumnName"
+        />
+        <MainTable
+                v-for="lineNames in cellNamesAndId"
+                :key="lineNames.id"
+                :id="lineNames.id"
+                :lineNames="cellName(lineNames)"
         />
     </table>
 </div>
