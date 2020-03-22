@@ -1,0 +1,19 @@
+<div id="about-page">
+    <span>
+        <h2>{{ aboutName }}</h2>
+        <hr>
+        <router-link class="button-global" to="/" exact> {{ buttonHome }}</router-link>
+    </span>
+    <div id="about">
+        <LeftInformationMenu
+            v-bind="getLeftInformation($route.params.id)"
+        />
+        <RightInformationMenu
+                v-bind:information="getRightInformation($route.params.id)"
+        />
+    </div>
+    <div id="button-menu">
+        <router-link class="button-leafing-through" style="margin-right: 40px;" :to="previous" exact> {{ buttonPrevious}}</router-link>
+        <router-link class="button-leafing-through" :to="next" exact> {{ buttonNext }}</router-link>
+    </div>
+</div>

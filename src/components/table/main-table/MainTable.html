@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<tr>
+    <MainTableCell 
+        v-for="(value, property) in lineNames"
+        :key="property"
+        :name="value"
+    />
+    <th><router-link :to="path">{{ buttonName }}</router-link></th>
+</tr>

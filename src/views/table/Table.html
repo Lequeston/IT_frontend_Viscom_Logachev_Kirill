@@ -1,0 +1,17 @@
+<div id="table-page">
+    <span>
+        <h2>{{ tableName }}</h2>
+        <hr>
+    </span>
+    <table>
+        <HeaderTable
+            :columnNames="columnNames"
+        />
+        <MainTable
+            v-for="lineNames in cellNamesAndId"
+            :key="lineNames.id"
+            :id="lineNames.id"
+            :lineNames="cellName(lineNames)"
+        />
+    </table>
+</div>
